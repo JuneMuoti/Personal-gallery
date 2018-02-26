@@ -14,20 +14,21 @@ What things you need to install the software and how to install them
 
 ```
 Django
-
+```
 ```
 Python
 ```
 
-### Installing
-```
 
+
+### Installing
 ```
 Clone  from my github(https://github.com/JuneMuoti/Personal-gallery)
 ```
+```
 Run pip > freeze reqiuirements.py to install dependecies
-
-```sh
+```
+```
 run python3.6 manage.py runserver to run app on local server
 ```
 
@@ -54,4 +55,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Acknowledgments
 
-Django content
+* Django content
