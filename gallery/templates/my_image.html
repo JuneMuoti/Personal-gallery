@@ -1,0 +1,26 @@
+{%extends 'base.html' %}
+{% block content %}
+    {% with item=imager%}
+<div class="uk-child-width-1-1@m" uk-grid>
+
+
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+
+                  <img src="{{item.gallery_image.url}}" alt="">
+
+            </div>
+            <div class="uk-card-body">
+
+<h1 class="uk-heading-line uk-text-center"><span>{{item.name}}</span></h1>
+                  <p><span class="uk-label">Category:</span>{{item.category}}</p>
+                  <p><span class="uk-label">Location:</span>{{item.location}}</p>
+                  <p><span class="uk-label">Description:</span>{{item.description}}</p>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  {%endwith%}
+{% endblock %}
