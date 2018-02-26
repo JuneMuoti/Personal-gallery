@@ -20,27 +20,27 @@ What things you need to install the software and how to install them
 ```Run pip > freeze reqiuirements.py to install dependecies
 ```run python3.6 manage.py runserver to run app on local server
 
-## Deployment
+### Deployment
 
 Heroku
 
 ## Built With
 
-* Django - The web framework used
-* Python - Language
-* UIkit- Used for-fronteUIkitd
-* Postgresql-Database
+Django - The web framework used
+Python - Language
+UIkit- Used for-fronteUIkitd
+Postgresql-Database
 
 
-## Authors
+Authors
 
-* **June Muoti** - *Initial work* - [personal-gallery](https://github.com/JuneMuoti/Personal-gallery)
+June Muoti - Initial work - [personal-gallery](https://github.com/JuneMuoti/Personal-gallery)
 
 
-## License
+ License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+Acknowledgments
 
-*Django content
+Django content
