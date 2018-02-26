@@ -1,7 +1,8 @@
 {%extends 'base.html' %}
 {% block content %}
 
-<h1 class="uk-text-center">Galleria</h1>
+
+<h1 class="uk-heading-line uk-text-center"><span>Galleria</span></h1>
 
 
 <div uk-slider>
@@ -65,31 +66,33 @@
 
     </div>
 
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-border-left"></ul>
 
 </div>
+<h2 class="uk-heading-line uk-text-center"><span>Some featured photos</span></h1>
   {% for image in images %}
-  <div class="uk-container uk-background-muted">
-  <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-    <div>
-<div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                      {% if image.gallery_image %}
-                        <img src="{{image.gallery_image.url}}"  alt="Image">
-                        {% endif %}
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">{{image.name}}</h3>
-                        <p>{{image.description}}.</p>
-                    </div>
-                </div>
-        </div>
+    <div class="uk-flex uk-float-left  uk-margin-medium-left uk-margin-medium-top  uk-margin-medium-right ">
+      <div class="uk-animation-toggle">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
 
+      <div class="uk-card-media-top">
+        {% if image.gallery_image %}
+          <img src="{{image.gallery_image.url}}"  alt="Image"width="300px"height="300px">
+          {% endif %}
+      </div>
+      <div class="uk-card-body">
+          <h3 class="uk-card-title">{{image.name}}</h3>
+        
+          <a class="uk-button uk-button-danger" href="{%url 'image' image.id%}">More details</a>
 
       </div>
-      </div>
+    </div>
+  </div>
+</div>
 
-      <hr>
+
+
+
 
   {%endfor%}
 {% endblock %}
