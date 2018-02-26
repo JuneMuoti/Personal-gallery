@@ -18,9 +18,10 @@ class Location(models.Model):
 class Image(models.Model):
     name=models.CharField(max_length=60)
     description=models.TextField()
-    gallery_image=models.ImageField(upload_to='images/')
+    gallery_image=models.ImageField(upload_to='images/',blank=True)
     location=models.ForeignKey(Location,null=True,blank=True)
     category=models.ForeignKey(Category,null=True,blank=True)
+    url=models.CharField(max_length=100,blank=True)
 
     @classmethod
     def my_image(cls):
@@ -47,9 +48,9 @@ class Image(models.Model):
         return  filtered_images
 
     @classmethod
-    def search_by_category(cls,search_term):
-        image = cls.objects.filter(category__icontains=search_term)
-        return image
+    def search_by_category(cls,query):
+        result = Image.objects.filter(category__name__icontains=query)
+        return result
     def __str__(self):
         return self.name
 
