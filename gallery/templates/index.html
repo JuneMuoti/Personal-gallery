@@ -12,43 +12,43 @@
         <div class="uk-slider-container uk-light">
             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                 <li>
-                    <img src="../media/images/alexa-mazzarello-169668.jpg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2017/06/alexa-mazzarello-169668-1400x933.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>1</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/photo-1461722936851-13a79b294a5d.jpeg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2016/06/photo-1461722936851-13a79b294a5d-1400x934.jpeg" alt="">
                     <div class="uk-position-center uk-panel"><h1>2</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/annie-spratt-133875.jpg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2017/09/annie-spratt-133875-1400x932.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>3</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/pexels-photo-14119.jpeg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2015/10/pexels-photo-14119-1400x933.jpeg" alt="">
                     <div class="uk-position-center uk-panel"><h1>4</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/annie-spratt-167089.jpg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2017/07/annie-spratt-167089-1400x931.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>5</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/alexa-mazzarello-169668.jpg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2017/06/alexa-mazzarello-169668-1400x933.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>6</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/photo-1461722936851-13a79b294a5d.jpeg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2016/06/photo-1461722936851-13a79b294a5d-1400x934.jpeg" alt="">
                     <div class="uk-position-center uk-panel"><h1>7</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/annie-spratt-133875.jpg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2017/09/annie-spratt-133875-1400x932.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>8</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/pexels-photo-14119.jpeg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2015/10/pexels-photo-14119-1400x933.jpeg" alt="">
                     <div class="uk-position-center uk-panel"><h1>9</h1></div>
                 </li>
                 <li>
-                    <img src="../media/images/annie-spratt-167089.jpg" alt="">
+                    <img src="https://cdn.magdeleine.co/wp-content/uploads/2017/07/annie-spratt-167089-1400x931.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>10</h1></div>
                 </li>
             </ul>
@@ -76,13 +76,13 @@
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
 
       <div class="uk-card-media-top">
-        {% if image.gallery_image %}
-          <img src="{{image.gallery_image.url}}"  alt="Image"width="300px"height="300px">
+        {% if image.url %}
+          <img src="{{image.url}}"  alt="Image"width="300px"height="300px">
           {% endif %}
       </div>
       <div class="uk-card-body">
           <h3 class="uk-card-title">{{image.name}}</h3>
-        
+
           <a class="uk-button uk-button-danger" href="{%url 'image' image.id%}">More details</a>
 
       </div>
