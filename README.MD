@@ -49,7 +49,7 @@ Heroku
 June Muoti - Initial work - [personal-gallery](https://github.com/JuneMuoti/Personal-gallery)
 
 
- License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
