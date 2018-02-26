@@ -30,3 +30,9 @@ def search_results(request):
         message = "You haven't searched for any image"
         return render(request, 'search.html',{"message":message})
 # Create your views here.
+def get_image(request,image_id):
+    try:
+        imager = Image.objects.get(id = image_id)
+    except DoesNotExist:
+        raise Http404()
+    return render(request,'my_image.html', {"imager":imager})
