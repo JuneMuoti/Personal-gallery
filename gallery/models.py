@@ -31,14 +31,31 @@ class Image(models.Model):
     def save_image(self):
         self.save()
 
-    def __str__(self):
-        return self.name
+    def delete_image(self):
+        self.save()
 
+    def update_image(self):
+        img= Image.objects.filter(id = 2).update()
+
+        return  imager
+    def get_image(image_id):
+        imager = Image.objects.get(id = image_id)
+        return  imager
+
+    def filter_by_location(location):
+        filtered_images = Image.objects.filter(location = 'somewhere')
+        return  filtered_images
 
     @classmethod
     def search_by_category(cls,search_term):
         image = cls.objects.filter(category__icontains=search_term)
         return image
+    def __str__(self):
+        return self.name
+
+
+
+
 
 
 
