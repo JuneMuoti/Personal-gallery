@@ -12,28 +12,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+```Django,
+```Python3.6
 
 ### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+```Clone  from my github(https://github.com/JuneMuoti/Personal-gallery)
+```Run pip > freeze reqiuirements.py to install dependecies
+```run python3.6 manage.py runserver to run app on local server
 
 ## Deployment
 
@@ -49,7 +34,7 @@ Heroku
 
 ## Authors
 
-* **June Muoti** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **June Muoti** - *Initial work* - [personal-gallery](https://github.com/JuneMuoti/Personal-gallery)
 
 
 ## License
@@ -58,4 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* 
+*Django content
