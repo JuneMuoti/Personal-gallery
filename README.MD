@@ -12,13 +12,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```Django,
-```Python3.6
+```
+Django,
+```
+Python3.6
 
 ### Installing
-```Clone  from my github(https://github.com/JuneMuoti/Personal-gallery)
-```Run pip > freeze reqiuirements.py to install dependecies
-```run python3.6 manage.py runserver to run app on local server
+```
+Clone  from my github(https://github.com/JuneMuoti/Personal-gallery)
+```
+Run pip > freeze reqiuirements.py to install dependecies
+```
+run python3.6 manage.py runserver to run app on local server
 
 ### Deployment
 
@@ -28,7 +33,7 @@ Heroku
 
 Django - The web framework used
 Python - Language
-UIkit- Used for-fronteUIkitd
+UIkit- Used for-frontend
 Postgresql-Database
 
 
