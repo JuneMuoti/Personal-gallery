@@ -1,1 +1,1 @@
-web: gunicorn​ Personal-gallery.wsgi
+web: gunicorn​ mypersonalgallery.wsgi
