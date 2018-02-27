@@ -2,11 +2,11 @@ from django.db import models
 #Image model class to hold all image details
 
 class Category(models.Model):
-    category=models.CharField(max_length=60)
+    name=models.CharField(max_length=60)
 
 
     def __str__(self):
-        return self.category
+        return self.name
 
 
 class Location(models.Model):
@@ -49,7 +49,7 @@ class Image(models.Model):
 
     @classmethod
     def search_by_category(cls,query):
-        result = Image.objects.filter(category__name__icontains=query)
+        result = cls.objects.filter(category__name__icontains=query)
         return result
     def __str__(self):
         return self.name
