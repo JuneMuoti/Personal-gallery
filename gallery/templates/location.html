@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{% block content %}
+<h2 class="uk-heading-line uk-text-center"><span>Some featured photos from Canada</span></h1>
+{% for image in images %}
+
+<div class="uk-container uk-float-left uk-margin-medium-right  uk-margin-medium-left uk-margin-medium-bottom">
+  <div class="uk-flex uk-float-left  uk-margin-medium-left uk-margin-medium-top  uk-margin-medium-right ">
+    <div class="uk-animation-toggle">
+      <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+
+    <div class="uk-card-media-top">
+      {% if image.url %}
+        <img src="{{image.url}}"  alt="Image"width="300px"height="300px">
+        {% endif %}
+    </div>
+    <div class="uk-card-body">
+        <h3 class="uk-card-title">{{image.name}}</h3>
+
+        <a class="uk-button uk-button-danger" href="{%url 'image' image.id%}">More details</a>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{%endfor%}
+{% endblock %}
