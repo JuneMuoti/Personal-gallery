@@ -19,11 +19,11 @@ def contact(request):
 
 def search_results(request):
     if 'image' in request.GET and request.GET["image"]:
-        search_term = request.GET.get("image")
-        searched_images = Image.search_by_category(query)
-        message = f"{search_term}"
+        queryList = request.GET.get("image")
+        searched_images = Image.search_by_category(queryList)
+        message = f"{queryList}"
 
-        return render(request, 'search.html',{"message":message,"image": searched_images})
+        return render(request, 'search.html',{"message":message,"imagey": searched_images})
 
     else:
         message = "You haven't searched for any image"
