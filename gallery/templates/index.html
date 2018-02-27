@@ -1,6 +1,6 @@
 {%extends 'base.html' %}
 {% block content %}
-
+<div class="uk-container">
 
 <h1 class="uk-heading-line uk-text-center"><span>Galleria</span></h1>
 
@@ -69,8 +69,10 @@
     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-border-left"></ul>
 
 </div>
+</div>
 <h2 class="uk-heading-line uk-text-center"><span>Some featured photos</span></h1>
   {% for image in images %}
+  
     <div class="uk-flex uk-float-left  uk-margin-medium-left uk-margin-medium-top  uk-margin-medium-right ">
       <div class="uk-animation-toggle">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
@@ -89,6 +91,8 @@
     </div>
   </div>
 </div>
+
+
 
 
 
