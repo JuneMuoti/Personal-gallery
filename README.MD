@@ -26,7 +26,7 @@ Python
 Clone  from my github(https://github.com/JuneMuoti/Personal-gallery)
 ```
 ```
-Run pip > freeze reqiuirements.py to install dependecies
+run pip > freeze -r requirements.txt to install dependencies
 ```
 ```
 run python3.6 manage.py runserver to run app on local server
