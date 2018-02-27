@@ -28,6 +28,12 @@ def search_results(request):
     else:
         message = "You haven't searched for any image"
         return render(request, 'search.html',{"message":message})
+def location_results(request):
+
+        location_images = Image.filter_by_location()
+
+        return render(request, 'location.html',{"images": location_images})
+
 # Create your views here.
 def get_image(request,image_id):
     try:
