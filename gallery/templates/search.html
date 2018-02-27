@@ -1,6 +1,6 @@
 {%extends 'base.html'%}
 {% block content %}
-<div class="container">
+<div class="uk-container">
 
   <div class="row">
     {% if imagey%}
@@ -10,22 +10,20 @@
     {% endif %}
 
   </div>
+  </div>
+<div class="uk-container">
 
-  <div class="row">
+  <div class="uk-card">
 
   {% if imagey %}
     {% for item in imagey %}
-
-      <div class="col-sm-6 col-md-3">
-
-          <h1>{{item.name}}</h1>
-
-            <img src="{{item.url}}"  alt="Image"width="300px"height="300px">
-
-      </div>
-          {% endfor %}
+      <h2>{{item.name}}</h2>
+      <img src="{{item.url}}"  alt="Image"width="300px"height="300px">
+    {% endfor %}
       {% endif %}
 
   </div>
 </div>
+
+
 {% endblock %}
