@@ -9,6 +9,7 @@ urlpatterns=[
     url(r'^contact/$',views.contact,name = 'contact'),
     url(r'^search/', views.search_results, name='search_results'),
     url(r'^image/(\d+)',views.get_image,name ='image'),
+    url(r'^location/',views.location_results,name ='location'),
 
 ]
 if settings.DEBUG:
