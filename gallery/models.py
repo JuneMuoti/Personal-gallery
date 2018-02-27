@@ -43,9 +43,7 @@ class Image(models.Model):
         imager = Image.objects.get(id = image_id)
         return  imager
 
-    def filter_by_location(location):
-        filtered_images = Image.objects.filter(location = 'somewhere')
-        return  filtered_images
+
 
     @classmethod
     def search_by_category(cls,query):
@@ -53,6 +51,11 @@ class Image(models.Model):
         return result
     def __str__(self):
         return self.name
+    @classmethod
+    def filter_by_location(cls):
+        result = cls.objects.filter(location__location__icontains='canada')
+        return result
+
 
 
 
