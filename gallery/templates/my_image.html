@@ -1,7 +1,8 @@
 {%extends 'base.html' %}
 {% block content %}
     {% with item=imager%}
-<div class="uk-child-width-1-1@m" uk-grid>
+<div class="uk-container">
+  <div class="uk-child-width-1-1@m" uk-grid>
 
 
     <div>
@@ -17,12 +18,22 @@
                   <p><span class="uk-label">Category:</span>{{item.category}}</p>
                   <p><span class="uk-label">Location:</span>{{item.location}}</p>
                   <p><span class="uk-label">Description:</span>{{item.description}}</p>
-                  <a class="uk-button uk-button-danger" href="">Copy link</a>
+                  <input class="uk-input" type="text" value={{item.url}} id="myInput">
+                  <a class="uk-button uk-button-danger" href=""onclick="myFunction()">Copy link</a>
+                  <script>
+  function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
 
 
             </div>
         </div>
     </div>
+  </div>
   </div>
   {%endwith%}
 {% endblock %}
